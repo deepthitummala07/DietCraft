@@ -12,16 +12,37 @@ To provide culturally relevant and healthy diet recommendations tailored to Indi
 - Matplotlib
 - Machine Learning (Linear Regression)
 
-## Features
-- Calculates daily calorie requirements
-- Uses Indian food nutrition data
-- Recommends personalized Indian meals
-- Visualizes nutritional insights
+## Project Workflow
 
-## Future Scope
-- Regional Indian diet plans
-- Web-based user interface
-- Advanced machine learning models
+1. **Calorie Calculation**
+   - Run `calorie_calculator.py` in the `src/` folder
+   - Enter your personal details:
+     - Weight (kg)
+     - Height (cm)
+     - Age (years)
+     - Gender (male/female)
+     - Activity level (sedentary, light, moderate, active, very active)
+   - The script calculates your estimated **daily calorie requirement**.
+
+2. **Meal Recommendation**
+   - Run `meal_recommendation.py` in the `src/` folder
+   - Enter the **daily calorie requirement** obtained from the previous step
+   - The script recommends a list of **Indian meals** from the dataset to meet your calorie needs
+
+## Dataset
+- `data/indian_food_nutrition.csv` contains Indian foods and their nutrition details:
+  - Food Name
+  - Calories
+  - Protein
+  - Carbohydrates
+  - Fats
 
 ## Uniqueness
-DietCraft stands out by using Indian local food nutrition data instead of generic Western datasets, ensuring that the diet recommendations are culturally relevant, practical, and suitable for Indian dietary habits.
+DietCraft stands out by using Indian local food nutrition data instead of generic Western datasets, ensuring that the diet recommendations are **culturally relevant, practical, and personalized** for Indian users.
+
+## Future Scope
+- Include regional Indian diet plans
+- Develop a web-based user interface
+- Add disease-specific diets (e.g., diabetes, obesity)
+- Implement advanced machine learning models for better predictions
+
